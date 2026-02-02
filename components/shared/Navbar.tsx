@@ -4,7 +4,7 @@ import { Button } from "../ui/moving-border";
 
 function MainNavbar() {
     return (
-        <header className="bg-black">
+        <header className="bg-black/40 absolute top-0 left-0 right-0 w-full z-50">
             <nav className="container mx-auto px-4 flex items-center justify-between">
                 <ul className="flex items-center gap-4">
                     <li>

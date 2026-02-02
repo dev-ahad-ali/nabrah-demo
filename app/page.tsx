@@ -1,10 +1,5 @@
-import MainContainer from "@/components/containers/MainContainer";
-import { Button } from "@/components/ui/button";
+import Hero from "@/components/home/Hero";
 
 export default function Home() {
-    return (
-        <MainContainer>
-            <Button>Click Me</Button>
-        </MainContainer>
-    );
+    return <Hero />;
 }
