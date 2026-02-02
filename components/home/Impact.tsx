@@ -21,7 +21,7 @@ const impactCards = [
         id: 1,
         title: "Sales Campaigns and Outreach",
         description:
-            "Reach thousands to promote new products and promotions at a fraction of the cost!",
+            "Remind clients of their appointments in clinics, hotels, or delivery services and reduce cancellations.",
         icon: Megaphone,
         gradient: "from-blue-500/20 to-purple-500/20",
     },
@@ -45,7 +45,7 @@ const impactCards = [
         id: 4,
         title: "Sales Campaigns and Outreach",
         description:
-            "Reach thousands to promote new products and promotions at a fraction of the cost!",
+            "Automatically collect customer feedback through natural and conversational voice interactions to enhance your services.",
         icon: Megaphone,
         gradient: "from-blue-500/20 to-purple-500/20",
     },
@@ -75,7 +75,7 @@ export function Impact() {
         <section className="w-full py-12 md:py-16 lg:py-20 px-4 md:px-6">
             <div className="max-w-7xl mx-auto">
                 {/* Title */}
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-12 md:mb-16">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-6 md:mb-16">
                     Where Nabrah Makes an Impact
                 </h2>
 
@@ -88,7 +88,7 @@ export function Impact() {
                     setApi={setApi}
                     className="w-full"
                 >
-                    <CarouselContent className="-ml-2 md:-ml-4">
+                    <CarouselContent className="-ml-2 md:-ml-4 py-8">
                         {impactCards.map((card) => {
                             const IconComponent = card.icon;
                             return (
@@ -98,23 +98,27 @@ export function Impact() {
                                 >
                                     <div className="h-full">
                                         <Card
-                                            className={`h-full p-6 md:p-8 bg-gradient-to-br ${card.gradient} border-slate-700 hover:border-slate-500 transition-colors duration-300`}
+                                            className={`h-full p-6 relative md:p-8 border-0 bg-transparent shadow-none`}
                                         >
-                                            <div className="flex flex-col gap-4 h-full">
-                                                {/* Icon */}
-                                                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
-                                                    <IconComponent className="w-6 h-6 text-white" />
+                                            <span
+                                                className={`left-0 right-0 rounded-2xl absolute -bottom-2 h-1/4 w-full bg-gradient-to-br ${card.gradient} border-slate-700 hover:border-slate-500 transition-colors duration-300`}
+                                            ></span>
+                                            <div className="w-full h-[250px] pt-4 px-4 rounded-2xl bg-gradient-to-br from-gray-600 to-gray-700 border-slate-700 hover:border-slate-500 transition-colors duration-300 backdrop-blur-2xl">
+                                                <div className="flex flex-col gap-4 h-full">
+                                                    <div className="flex items-center gap-4">
+                                                        <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
+                                                            <IconComponent className="w-6 h-6 text-white" />
+                                                        </div>
+                                                        <h3 className="text-lg md:text-xl font-semibold text-white">
+                                                            {card.title}
+                                                        </h3>
+                                                    </div>
+
+                                                    {/* Description */}
+                                                    <p className="text-sm md:text-base text-slate-300 leading-relaxed flex-grow">
+                                                        {card.description}
+                                                    </p>
                                                 </div>
-
-                                                {/* Title */}
-                                                <h3 className="text-lg md:text-xl font-semibold text-white">
-                                                    {card.title}
-                                                </h3>
-
-                                                {/* Description */}
-                                                <p className="text-sm md:text-base text-slate-300 leading-relaxed flex-grow">
-                                                    {card.description}
-                                                </p>
                                             </div>
                                         </Card>
                                     </div>
