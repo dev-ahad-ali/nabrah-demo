@@ -89,7 +89,7 @@ export const Marque = ({
             <ul
                 ref={scrollerRef}
                 className={cn(
-                    "flex w-max min-w-full shrink-0 flex-nowrap gap-4",
+                    "flex gap-12 flex-nowrap py-6",
                     start && "animate-scroll",
                     pauseOnHover && "hover:[animation-play-state:paused]",
                 )}
