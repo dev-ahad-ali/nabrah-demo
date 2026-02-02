@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import MainContainer from "../containers/MainContainer";
 import { ShootingStars } from "../ui/shooting-starts";
 import { StarsBackground } from "../ui/stars-background";
@@ -66,6 +65,29 @@ function Hero() {
                 alt="shape"
                 className="absolute -top-50 bottom-0 -rotate-45 left-1/4 h-400 -z-1 opacity-75"
             />
+            <div className="grid grid-cols-2 items-center">
+                <div className="ps-10">
+                    <Image
+                        src={"/logo.svg"}
+                        width={100}
+                        height={100}
+                        alt="Nabrah logo"
+                    />
+                    <h2 className="flex flex-col gap-4 text-7xl font-bold mt-4 text-white">
+                        <span>Revolutionize Your</span>
+                        <span className="bg-clip-text text-transparent bg-radial from-gray-500 via-gray-300 to-gray-600">
+                            Voice Communication
+                        </span>
+                        <span>With NABRAH AI</span>
+                    </h2>
+                </div>
+                <Image
+                    src={"/assets/hero-img.png"}
+                    width={1200}
+                    height={800}
+                    alt="img"
+                />
+            </div>
         </div>
     );
 }
