@@ -31,13 +31,15 @@ function MainNavbar() {
                     href="/"
                     className="relative px-4 py-1 pr-12 flex items-center gap-4"
                 >
-                    <Image
-                        src={"./logo.svg"}
-                        width={50}
-                        height={50}
-                        alt="Nabrah Logo"
-                    />
-                    <span className="text-4xl font-bold text-blue-800">
+                    <span className="bg-white rounded-full w-fit">
+                        <Image
+                            src={"./logo.svg"}
+                            width={50}
+                            height={50}
+                            alt="Nabrah Logo"
+                        />
+                    </span>
+                    <span className="text-4xl text-transparent font-bold bg-clip-text bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700">
                         Nabrah
                     </span>
                     <span className="absolute block w-2 h-2 rounded-full bg-blue-800 -right-1 top-1/2 -translate-y-1/2"></span>

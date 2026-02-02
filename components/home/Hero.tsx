@@ -59,12 +59,14 @@ function Hero() {
             />
             <div className="grid grid-cols-2 items-center">
                 <div className="ps-10">
-                    <Image
-                        src={"/logo.svg"}
-                        width={100}
-                        height={100}
-                        alt="Nabrah logo"
-                    />
+                    <div className="bg-white rounded-full w-fit">
+                        <Image
+                            src={"/logo.svg"}
+                            width={100}
+                            height={100}
+                            alt="Nabrah logo"
+                        />
+                    </div>
                     <h2 className="flex flex-col gap-4 text-7xl font-bold mt-4 text-white">
                         <span>Revolutionize Your</span>
                         <span className="bg-clip-text text-transparent bg-radial from-gray-500 via-gray-300 to-gray-600">
