@@ -32,35 +32,37 @@ const testimonials = [
 
 export function Client() {
     return (
-        <div className="rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-            <Marque direction="right" speed="slow">
-                {testimonials.map((item, idx) => (
-                    <div
-                        className="relative w-[350px] max-w-full shrink-0 rounded-2xl border border-b-0 border-zinc-200 bg-[linear-gradient(180deg,#fafafa,#f5f5f5)] px-8 py-6 md:w-[450px] dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]"
-                        key={item.name}
-                    >
-                        <blockquote>
-                            <div
-                                aria-hidden="true"
-                                className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
-                            ></div>
-                            <span className="relative z-20 text-sm leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
-                                {item.quote}
-                            </span>
-                            <div className="relative z-20 mt-6 flex flex-row items-center">
-                                <span className="flex flex-col gap-1">
-                                    <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
-                                        {item.name}
-                                    </span>
-                                    <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
-                                        {item.title}
-                                    </span>
+        <>
+            <h3 className="uppercase text-white text-center py-8 px-4 text-2xl font-semibold bg-linear-to-t from-gray-800/80 via-gray-600/50 to-gray-300/00 -mt-4 backdrop-blur-md">
+                Trusted by companies in 100+ countries around the globe
+            </h3>
+            <div className="rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+                <Marque direction="right" speed="slow">
+                    {testimonials.map((item) => (
+                        <li key={item.name}>
+                            <blockquote>
+                                <div
+                                    aria-hidden="true"
+                                    className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                                ></div>
+                                <span className="relative z-20 text-sm leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
+                                    {item.quote}
                                 </span>
-                            </div>
-                        </blockquote>
-                    </div>
-                ))}
-            </Marque>
-        </div>
+                                <div className="relative z-20 mt-6 flex flex-row items-center">
+                                    <span className="flex flex-col gap-1">
+                                        <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
+                                            {item.name}
+                                        </span>
+                                        <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
+                                            {item.title}
+                                        </span>
+                                    </span>
+                                </div>
+                            </blockquote>
+                        </li>
+                    ))}
+                </Marque>
+            </div>
+        </>
     );
 }
