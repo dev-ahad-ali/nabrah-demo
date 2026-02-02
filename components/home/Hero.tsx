@@ -3,7 +3,7 @@ import MainContainer from "../containers/MainContainer";
 import { ShootingStars } from "../ui/shooting-starts";
 import { StarsBackground } from "../ui/stars-background";
 import { Badge } from "../ui/badge";
-import { Button } from "../ui/moving-border";
+import MovingBorderButton from "../ui/moving-border";
 import Image from "next/image";
 
 function Hero() {
@@ -39,19 +39,11 @@ function Hero() {
                             cumque?
                         </p>
 
-                        <div className="flex justify-center gap-4 mt-4">
-                            <Button
-                                borderRadius="1.75rem"
-                                className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer"
-                            >
-                                Book A Demo
-                            </Button>
-                            <Button
-                                borderRadius="1.75rem"
-                                className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer"
-                            >
-                                Take Product Tour
-                            </Button>
+                        <div className="flex justify-center gap-8 mt-4">
+                            <MovingBorderButton>Book A Demo</MovingBorderButton>
+                            <MovingBorderButton>
+                                Take Product Tour Tour
+                            </MovingBorderButton>
                         </div>
                     </div>
                 </div>

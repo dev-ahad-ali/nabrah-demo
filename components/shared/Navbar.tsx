@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../ui/moving-border";
+import MovingBorderButton, { Button } from "../ui/moving-border";
 
 function MainNavbar() {
     return (
@@ -52,12 +52,7 @@ function MainNavbar() {
                         </Link>
                     </li>
                     <li>
-                        <Button
-                            borderRadius="1.75rem"
-                            className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 cursor-pointer"
-                        >
-                            Book A Demo
-                        </Button>
+                        <MovingBorderButton>Book A Demo</MovingBorderButton>
                     </li>
                 </ul>
             </nav>

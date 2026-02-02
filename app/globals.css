@@ -203,4 +203,5 @@
 
 body {
     letter-spacing: var(--tracking-normal);
+    scrollbar-width: 0;
 }
