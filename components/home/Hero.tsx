@@ -8,19 +8,19 @@ import Image from "next/image";
 
 function Hero() {
     return (
-        <div className="min-h-screen relative">
+        <div className="min-h-screen relative overflow-x-hidden overflow-y-hidden">
             <MainContainer>
                 <div className="grid place-items-center min-h-screen w-full">
                     <div>
                         <Badge className="bg-black py-2 px-4">
-                            <Badge className="bg-white text-black text-xl font-bold">
+                            <Badge className="bg-white text-black lg:text-xl font-bold">
                                 new
                             </Badge>
-                            <span className="text-xl ms-2">
+                            <span className="text-base lg:text-xl ms-2">
                                 Seamless, Smart and Scalable Voice Interactions
                             </span>
                         </Badge>
-                        <h1 className="text-7xl flex flex-col font-bold text-center gap-4 mt-2">
+                        <h1 className="text-3xl lg:text-7xl flex flex-col font-bold text-center gap-4 mt-2">
                             <span className="text-white">
                                 Keep your agent on the ground and
                             </span>
@@ -28,7 +28,7 @@ function Hero() {
                                 Let AI take care of the phones
                             </span>
                         </h1>
-                        <p className="text-white/70 font-medium text-center max-w-6xl text-xl mt-2">
+                        <p className="text-white/70 font-medium text-center max-w-2xl lg:max-w-6xl text-base lg:text-xl mt-2">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Exercitationem praesentium magnam accusantium
                             ipsam, ex nesciunt saepe fugit eum cum vel nihil
@@ -39,7 +39,7 @@ function Hero() {
                             cumque?
                         </p>
 
-                        <div className="flex justify-center gap-8 mt-4">
+                        <div className="flex flex-col md:flex-row justify-center gap-8 mt-4">
                             <MovingBorderButton>Book A Demo</MovingBorderButton>
                             <MovingBorderButton>
                                 Take Product Tour Tour
@@ -57,8 +57,8 @@ function Hero() {
                 alt="shape"
                 className="absolute -top-50 bottom-0 -rotate-45 left-1/4 h-400 -z-1 opacity-75"
             />
-            <div className="grid grid-cols-2 items-center">
-                <div className="ps-10">
+            <div className="grid xl:grid-cols-2 items-center gap-4">
+                <div className="ps-10 flex flex-col justify-center items-center xl:items-start">
                     <div className="bg-white rounded-full w-fit">
                         <Image
                             src={"/logo.svg"}
@@ -67,7 +67,7 @@ function Hero() {
                             alt="Nabrah logo"
                         />
                     </div>
-                    <h2 className="flex flex-col gap-4 text-7xl font-bold mt-4 text-white">
+                    <h2 className="flex flex-col lg:gap-4 text-2xl lg:text-7xl font-bold mt-4 text-white text-center xl:text-left">
                         <span>Revolutionize Your</span>
                         <span className="bg-clip-text text-transparent bg-radial from-gray-500 via-gray-300 to-gray-600">
                             Voice Communication
