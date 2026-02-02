@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import MainNavbar from "@/components/shared/Navbar";
 
 export const metadata: Metadata = {
     title: "Nabrah",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`antialiased dark bg-background`}>{children}</body>
+            <body className={`antialiased dark bg-background`}>
+                <MainNavbar />
+                {children}
+            </body>
         </html>
     );
 }
