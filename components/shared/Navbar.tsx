@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import MovingBorderButton, { Button } from "../ui/moving-border";
+import MovingBorderButton from "../ui/moving-border";
 
 function MainNavbar() {
     return (
-        <header className="bg-black/40 absolute top-0 left-0 right-0 w-full z-50">
-            <nav className="container mx-auto px-4 flex items-center justify-between">
+        <header className="absolute top-0 left-0 right-0 w-full z-50 py-4 h-fit bg-linear-to-r from-gray-800/60 via-gray-700/30 to-gray-600/10 backdrop-blur-md">
+            <nav className="max-w-300 mx-auto px-4 flex items-center justify-between">
                 <ul className="flex items-center gap-4">
                     <li>
                         <Link
@@ -41,7 +41,7 @@ function MainNavbar() {
                     </span>
                     <span className="absolute block w-2 h-2 rounded-full bg-blue-800 -right-1 top-1/2 -translate-y-1/2"></span>
                 </Link>
-                <ul className="flex items-center gap-4">
+                <ul className="flex items-center gap-12">
                     <li>
                         <Link
                             href="/"
