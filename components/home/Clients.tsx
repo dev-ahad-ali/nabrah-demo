@@ -37,7 +37,7 @@ const clients = [
 export function Client() {
     return (
         <>
-            <h3 className="uppercase text-white text-center py-8 px-4 text-2xl font-semibold bg-linear-to-t from-gray-800/80 via-gray-600/50 to-gray-300/00 -mt-4 backdrop-blur-md">
+            <h3 className="uppercase text-white text-center py-4 lg:py-8 px-4 lg:text-2xl font-semibold bg-linear-to-t from-gray-800/80 via-gray-600/50 to-gray-300/00 -mt-4 backdrop-blur-md">
                 Trusted by companies in 100+ countries around the globe
             </h3>
             <Marque direction="right" speed="slow">
