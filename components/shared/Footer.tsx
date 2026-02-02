@@ -11,9 +11,9 @@ import {
 
 export function Footer() {
     return (
-        <footer className="py-12 bg-linear-to-r from-gray-800/60 via-gray-700/30 to-gray-600/10 ">
+        <footer className="py-8 lg:py-12 bg-linear-to-r from-gray-800/60 via-gray-700/30 to-gray-600/10 ">
             <MainContainer>
-                <div className="flex items-center gap-4 justify-between">
+                <div className="flex flex-col md:flex-row items-center gap-4 justify-between">
                     <div className="flex flex-col gap-4 max-w-60">
                         <Link
                             href="/"
@@ -25,7 +25,7 @@ export function Footer() {
                                     width={50}
                                     height={50}
                                     alt="Nabrah Logo"
-                                    className="lg:block hidden"
+                                    className=""
                                 />
                             </span>
                             <span className="lg:text-4xl text-xl text-transparent font-bold bg-clip-text bg-gradient-to-r from-blue-300 via-blue-500 to-blue-700">
@@ -53,7 +53,7 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    <ul className="flex items-center gap-12">
+                    <ul className="flex items-center gap-4 xl:gap-12 flex-col lg:flex-row">
                         <li>
                             <Link
                                 href="/"
@@ -91,7 +91,7 @@ export function Footer() {
                                 ]}
                             >
                                 <button className="h-full w-full cursor-pointer rounded-full bg-linear-to-r from-neutral-100 via-neutral-100 to-white px-8 py-2 text-black shadow-[0px_2px_0px_0px_var(--color-neutral-50)_inset,0px_0.5px_1px_0px_var(--color-neutral-400)] transition-all duration-100 active:scale-98 dark:from-black dark:via-black dark:to-neutral-900 dark:text-white dark:shadow-[0px_1px_0px_0px_var(--color-neutral-950)_inset,0px_1px_0px_0px_var(--color-neutral-800)] lg:text-xl font-bold">
-                                    <span className="hidden lg:inline">
+                                    <span className="hidden xl:inline">
                                         Book A{" "}
                                     </span>
                                     Demo
