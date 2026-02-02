@@ -10,13 +10,13 @@ function Hero() {
     return (
         <div className="min-h-screen relative overflow-x-hidden overflow-y-hidden">
             <MainContainer>
-                <div className="grid place-items-center min-h-screen w-full">
+                <div className="grid place-items-center min-h-screen w-full mt-18 md:mt-0">
                     <div>
                         <Badge className="bg-black py-2 px-4">
                             <Badge className="bg-white text-black lg:text-xl font-bold">
                                 new
                             </Badge>
-                            <span className="text-base lg:text-xl ms-2">
+                            <span className="text-base lg:text-xl ms-2 text-wrap">
                                 Seamless, Smart and Scalable Voice Interactions
                             </span>
                         </Badge>
